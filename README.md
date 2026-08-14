@@ -1,42 +1,44 @@
 # E2E test automation portfolio
 
-Public test frameworks by [GitYourCodeOn](https://github.com/GitYourCodeOn). Each repository is clone-and-run, with GitHub Actions where the target site or API is still live.
+Public test frameworks by [andepandy](https://github.com/andepandy). Each repository is clone-and-run, with GitHub Actions where the target site or API is still live.
 
 This is the page to share on a CV. GitHub does not group repositories into folders, so this README is the index.
+
+Repo names follow `{stack}-{style}-{target}` so the technology is obvious before you open the project.
 
 ## UI end-to-end
 
 | Repository | Stack | Target |
 | --- | --- | --- |
-| [DemoAutomation](https://github.com/GitYourCodeOn/DemoAutomation) | C#, Reqnroll (BDD), NUnit, Selenium 4, page objects | [Automation Exercise](https://www.automationexercise.com/) shop: account, basket, category, search, contact |
-| [playwright-shop-tests](https://github.com/GitYourCodeOn/playwright-shop-tests) | Playwright TypeScript (fluent API) and Playwright C# (UI) | Same shop journeys over API and UI: products, search, account |
-| [cypress_typescript](https://github.com/GitYourCodeOn/cypress_typescript) | Cypress, TypeScript, Cucumber | DuckDuckGo search |
-| [WebdriverIO](https://github.com/GitYourCodeOn/WebdriverIO) | WebdriverIO, Mocha | Sauce Demo login and checkout |
-| [behave-selenium-login-demo](https://github.com/GitYourCodeOn/behave-selenium-login-demo) | Python, Behave (BDD), Selenium 4, page objects | [The Internet](https://the-internet.herokuapp.com/) login (valid + invalid) |
-| [C-Selenium](https://github.com/GitYourCodeOn/C-Selenium) | Archive of the original Selenium 3 / SpecFlow suite | Replaced by DemoAutomation |
+| [csharp-reqnroll-selenium-shop](https://github.com/andepandy/csharp-reqnroll-selenium-shop) | C#, Reqnroll (BDD), NUnit, Selenium 4, page objects | [Automation Exercise](https://www.automationexercise.com/) shop: account, basket, category, search, contact |
+| [playwright-ts-csharp-shop](https://github.com/andepandy/playwright-ts-csharp-shop) | Playwright TypeScript (fluent API) + Playwright C# (UI) | Same shop journeys over API and UI: products, search, account |
+| [cypress-ts-cucumber-duckduckgo](https://github.com/andepandy/cypress-ts-cucumber-duckduckgo) | Cypress, TypeScript, Cucumber | DuckDuckGo search |
+| [webdriverio-mocha-sauce-demo](https://github.com/andepandy/webdriverio-mocha-sauce-demo) | WebdriverIO, Mocha | Sauce Demo login and checkout |
+| [python-behave-selenium-login](https://github.com/andepandy/python-behave-selenium-login) | Python, Behave (BDD), Selenium 4, page objects | [The Internet](https://the-internet.herokuapp.com/) login (valid + invalid) |
+| [csharp-selenium3-specflow-archive](https://github.com/andepandy/csharp-selenium3-specflow-archive) | C#, SpecFlow, Selenium 3 (archive) | Replaced by `csharp-reqnroll-selenium-shop` |
 
 ## API and performance
 
 | Repository | Stack | Target |
 | --- | --- | --- |
-| [Docker-E2e](https://github.com/GitYourCodeOn/Docker-E2e) | Cypress, Cucumber, Docker | Public users API: create, list, get, 404 |
-| [api-performance-gatling](https://github.com/GitYourCodeOn/api-performance-gatling) | Gatling, Maven, Docker | Load test against the same public users API |
-| [CovidRatesAPICheck](https://github.com/GitYourCodeOn/CovidRatesAPICheck) | C#, SpecFlow | COVID statistics APIs |
+| [cypress-cucumber-docker-users-api](https://github.com/andepandy/cypress-cucumber-docker-users-api) | Cypress, Cucumber, Docker | Public users API: create, list, get, 404 |
+| [gatling-maven-docker-users-api](https://github.com/andepandy/gatling-maven-docker-users-api) | Gatling, Maven, Docker | Load test against the same public users API |
+| [csharp-specflow-covid-api](https://github.com/andepandy/csharp-specflow-covid-api) | C#, SpecFlow | COVID statistics APIs |
 
 ## Take-home tasks
 
-Public demos rewritten without company names. Suites that still hit private training apps or contain product-specific credentials stay private and are not listed.
+Public demos rewritten without company names.
 
 | Repository | Stack | Target |
 | --- | --- | --- |
-| [wdio-typescript-login-demo](https://github.com/GitYourCodeOn/wdio-typescript-login-demo) | WebdriverIO 9, TypeScript, Mocha, page objects | [The Internet](https://the-internet.herokuapp.com/) login (valid + invalid) |
-| [behave-selenium-login-demo](https://github.com/GitYourCodeOn/behave-selenium-login-demo) | Python, Behave, Selenium 4, page objects | Same login target as the WDIO take-home (rewritten without company branding) |
+| [webdriverio-ts-pom-login](https://github.com/andepandy/webdriverio-ts-pom-login) | WebdriverIO 9, TypeScript, Mocha, page objects | [The Internet](https://the-internet.herokuapp.com/) login (valid + invalid) |
+| [python-behave-selenium-login](https://github.com/andepandy/python-behave-selenium-login) | Python, Behave, Selenium 4, page objects | Same login target as the WDIO take-home |
 
 ## Mobile e2e
 
 | Repository | Stack | Notes |
 | --- | --- | --- |
-| [detox-mobile-pom](https://github.com/GitYourCodeOn/detox-mobile-pom) | Detox, TypeScript, page objects | Structure template: Matchers / Gestures / Assertions + POM. CI typechecks; no app binary to build. |
+| [detox-typescript-pom-mobile](https://github.com/andepandy/detox-typescript-pom-mobile) | Detox, TypeScript, page objects | Structure template: Matchers / Gestures / Assertions + POM. CI typechecks; no app binary to build. |
 
 ### Mobile e2e open source projects
 
@@ -56,10 +58,10 @@ Full history: [commits by Andepande](https://github.com/MetaMask/metamask-mobile
 
 ## How to review
 
-1. Open **DemoAutomation** for a full BDD UI framework (the Azure DevOps project copied here).
-2. Open **playwright-shop-tests** for fluent Playwright API tests next to the same journeys in Playwright C#.
-3. Open **Docker-E2e** for API testing in Cypress, including a Dockerfile.
-4. Open **api-performance-gatling** for Gatling performance tests.
-5. Open **detox-mobile-pom** for mobile Detox + TypeScript page-object structure.
-6. Open **wdio-typescript-login-demo** for a take-home style WDIO + TypeScript login suite.
-7. Open **behave-selenium-login-demo** for Python Behave + Selenium 4 BDD login tests.
+1. Open **csharp-reqnroll-selenium-shop** for a full BDD UI framework (the Azure DevOps project copied here).
+2. Open **playwright-ts-csharp-shop** for fluent Playwright API tests next to the same journeys in Playwright C#.
+3. Open **cypress-cucumber-docker-users-api** for API testing in Cypress, including a Dockerfile.
+4. Open **gatling-maven-docker-users-api** for Gatling performance tests.
+5. Open **detox-typescript-pom-mobile** for mobile Detox + TypeScript page-object structure.
+6. Open **webdriverio-ts-pom-login** for a take-home style WDIO + TypeScript login suite.
+7. Open **python-behave-selenium-login** for Python Behave + Selenium 4 BDD login tests.
