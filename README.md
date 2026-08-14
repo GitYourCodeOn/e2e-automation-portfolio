@@ -12,6 +12,7 @@ This is the page to share on a CV. GitHub does not group repositories into folde
 | [playwright-shop-tests](https://github.com/GitYourCodeOn/playwright-shop-tests) | Playwright TypeScript (fluent API) and Playwright C# (UI) | Same shop journeys over API and UI: products, search, account |
 | [cypress_typescript](https://github.com/GitYourCodeOn/cypress_typescript) | Cypress, TypeScript, Cucumber | DuckDuckGo search |
 | [WebdriverIO](https://github.com/GitYourCodeOn/WebdriverIO) | WebdriverIO, Mocha | Sauce Demo login and checkout |
+| [behave-selenium-login-demo](https://github.com/GitYourCodeOn/behave-selenium-login-demo) | Python, Behave (BDD), Selenium 4, page objects | [The Internet](https://the-internet.herokuapp.com/) login (valid + invalid) |
 | [C-Selenium](https://github.com/GitYourCodeOn/C-Selenium) | Archive of the original Selenium 3 / SpecFlow suite | Replaced by DemoAutomation |
 
 ## API and performance
@@ -29,6 +30,7 @@ Public demos rewritten without company names. Suites that still hit private trai
 | Repository | Stack | Target |
 | --- | --- | --- |
 | [wdio-typescript-login-demo](https://github.com/GitYourCodeOn/wdio-typescript-login-demo) | WebdriverIO 9, TypeScript, Mocha, page objects | [The Internet](https://the-internet.herokuapp.com/) login (valid + invalid) |
+| [behave-selenium-login-demo](https://github.com/GitYourCodeOn/behave-selenium-login-demo) | Python, Behave, Selenium 4, page objects | Same login target as the WDIO take-home (rewritten without company branding) |
 
 ## Mobile e2e
 
@@ -60,3 +62,4 @@ Full history: [commits by Andepande](https://github.com/MetaMask/metamask-mobile
 4. Open **api-performance-gatling** for Gatling performance tests.
 5. Open **detox-mobile-pom** for mobile Detox + TypeScript page-object structure.
 6. Open **wdio-typescript-login-demo** for a take-home style WDIO + TypeScript login suite.
+7. Open **behave-selenium-login-demo** for Python Behave + Selenium 4 BDD login tests.
