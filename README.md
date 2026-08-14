@@ -40,6 +40,14 @@ Public demos rewritten without company names.
 | --- | --- | --- |
 | [detox-typescript-pom-mobile](https://github.com/andepandy/detox-typescript-pom-mobile) | Detox, TypeScript, page objects | Structure template: Matchers / Gestures / Assertions + POM. CI typechecks; no app binary to build. |
 
+## AI SDET
+
+Modern AI-shaped web QA: natural-language intents on Playwright, self-healing locators, optional LLM planning. Same ideas as Stagehand / Midscene, kept clone-and-run without requiring an API key in CI.
+
+| Repository | Stack | Target |
+| --- | --- | --- |
+| [ai-playwright-web-qa](https://github.com/andepandy/ai-playwright-web-qa) | Playwright, TypeScript, intent agent, self-healing locators | The Internet login + Automation Exercise search via `ai.act(...)` |
+
 ### Mobile e2e open source projects
 
 Contributions to [MetaMask Mobile](https://github.com/MetaMask/metamask-mobile) under [Andepande](https://github.com/Andepande) — Detox-era e2e, API mocking, CI parallelism, and reliability work. The repo has since moved primary smoke coverage toward Appium; the commits below show the Detox and platform work shipped on `main`.
@@ -63,5 +71,6 @@ Full history: [commits by Andepande](https://github.com/MetaMask/metamask-mobile
 3. Open **cypress-cucumber-docker-users-api** for API testing in Cypress, including a Dockerfile.
 4. Open **gatling-maven-docker-users-api** for Gatling performance tests.
 5. Open **detox-typescript-pom-mobile** for mobile Detox + TypeScript page-object structure.
-6. Open **webdriverio-ts-pom-login** for a take-home style WDIO + TypeScript login suite.
-7. Open **python-behave-selenium-login** for Python Behave + Selenium 4 BDD login tests.
+6. Open **ai-playwright-web-qa** for AI-shaped Playwright intents and self-healing locators.
+7. Open **webdriverio-ts-pom-login** for a take-home style WDIO + TypeScript login suite.
+8. Open **python-behave-selenium-login** for Python Behave + Selenium 4 BDD login tests.
