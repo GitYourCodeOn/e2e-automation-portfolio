@@ -9,6 +9,7 @@ This is the page to share on a CV. GitHub does not group repositories into folde
 | Repository | Stack | Target |
 | --- | --- | --- |
 | [DemoAutomation](https://github.com/GitYourCodeOn/DemoAutomation) | C#, Reqnroll (BDD), NUnit, Selenium 4, page objects | [Automation Exercise](https://www.automationexercise.com/) shop: account, basket, category, search, contact |
+| [playwright-shop-tests](https://github.com/GitYourCodeOn/playwright-shop-tests) | Playwright TypeScript (fluent API) and Playwright C# (UI) | Same shop journeys over API and UI: products, search, account |
 | [cypress_typescript](https://github.com/GitYourCodeOn/cypress_typescript) | Cypress, TypeScript, Cucumber | DuckDuckGo search |
 | [WebdriverIO](https://github.com/GitYourCodeOn/WebdriverIO) | WebdriverIO, Mocha | Sauce Demo login and checkout |
 | [C-Selenium](https://github.com/GitYourCodeOn/C-Selenium) | Archive of the original Selenium 3 / SpecFlow suite | Replaced by DemoAutomation |
@@ -17,14 +18,15 @@ This is the page to share on a CV. GitHub does not group repositories into folde
 
 | Repository | Stack | Target |
 | --- | --- | --- |
-| [Docker-E2e](https://github.com/GitYourCodeOn/Docker-E2e) | Cypress, Cucumber, Docker | LineTen customer API (create, get, validation, 404) |
-| [Linten-Customers-API-Performance-testing](https://github.com/GitYourCodeOn/Linten-Customers-API-Performance-testing) | Gatling, Maven, Docker | LineTen API load test |
+| [Docker-E2e](https://github.com/GitYourCodeOn/Docker-E2e) | Cypress, Cucumber, Docker | Public users API: create, list, get, 404 |
+| [api-performance-gatling](https://github.com/GitYourCodeOn/api-performance-gatling) | Gatling, Maven, Docker | Load test against the same public users API |
 | [CovidRatesAPICheck](https://github.com/GitYourCodeOn/CovidRatesAPICheck) | C#, SpecFlow | COVID statistics APIs |
 
 ## How to review
 
 1. Open **DemoAutomation** for a full BDD UI framework (the Azure DevOps project copied here).
-2. Open **Docker-E2e** for API testing in Cypress, including a Dockerfile.
-3. Open **cypress_typescript** or **WebdriverIO** for JavaScript UI runners.
+2. Open **playwright-shop-tests** for fluent Playwright API tests next to the same journeys in Playwright C#.
+3. Open **Docker-E2e** for API testing in Cypress, including a Dockerfile.
+4. Open **api-performance-gatling** for Gatling performance tests.
 
 Private take-home suites (Playwright / Lokalise, WebdriverIO ETH, Python Behave / Primer, Mocha / Deel) stay private and are not listed here.
